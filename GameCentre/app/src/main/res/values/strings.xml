@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GameCentre</string>
+    <string name="none_string">none</string>
+    <string name="undo">UNDO</string>
+    <string name="slidingtiles_welcome">Welcome To Sliding Tiles   A Puzzle Game where you must arrange the numbers in the correct order</string>
+    <string name="new_game">New Game</string>
+    <string name="load_saved_game">Load Saved Game</string>
+    <string name="board_size">BOARD SIZE:</string>
+    <string name="best_score">Best Score</string>
+    <string name="user">User:</string>
+    <string name="score">Score:</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="game_launch_centre">Game Launch Centre</string>
+    <string name="sliding_tiles">Sliding Tiles</string>
+    <string name="my_highscores">My Best Scores (Lower scores are better)</string>
+    <string name="textview">TextView</string>
+    <string name="new_password">New Password</string>
+    <string name="change">Change</string>
+    <string name="board_size_label">Board Size</string>
+    <string name="memory_matrix">Memory Matrix</string>
+    <string name="current_score">Current Score</string>
+    <string name="username_cannot_contain_and_is_not_case_sensitive">Username cannot contain underscores or spaces and is not case sensitive</string>
+    <string name="memorymatrix_welcome">Welcome To Memory Matrix   A game where you must memorize a pattern and recreate it</string>
+    <string name="treasurehunt_welcome">Welcome To Treasure Hunt   A game where you must find your way to the treasure!</string>
+    <string name="change_your_password_if_you_d_like">Change your password, if you\'d like:</string>
+    <string name="treasure_hunt">Treasure Hunt</string>
+</resources>

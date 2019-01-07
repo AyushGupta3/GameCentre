@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fall2018.csc2017.slidingtiles.SlidingTilesActivity">
+
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="380dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/slidingtiles_welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/userWithBestScore"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/GameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:text="@string/new_game"
+        app:layout_constraintBottom_toBottomOf="@+id/LoadButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LoadButton"
+        app:layout_constraintTop_toTopOf="@+id/LoadButton" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:text="@string/load_saved_game"
+        app:layout_constraintEnd_toStartOf="@+id/StartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameText" />
+
+
+    <NumberPicker
+        android:id="@+id/boardSizePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartButton"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bestScoreDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/boardSizeLabel"
+        android:layout_width="121dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/boardSizePicker"
+        android:layout_alignStart="@+id/LoadButton"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/board_size"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/boardSizePicker"
+        app:layout_constraintEnd_toStartOf="@+id/boardSizePicker"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadButton"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/bestScoreDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:text="@string/best_score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/userWithBestScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userLabel"
+        android:layout_width="235dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bestScoreDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/user"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bestScoreDescription" />
+
+    <TextView
+        android:id="@+id/userWithBestScore"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/userLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameText" />
+
+    <TextView
+        android:id="@+id/bestScoreLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/userLabel"
+        android:layout_below="@+id/userLabel"
+        android:text="@string/score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="@+id/userLabel"
+        app:layout_constraintStart_toStartOf="@+id/userLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userLabel" />
+
+    <TextView
+        android:id="@+id/bestScore"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/userWithBestScore"
+        android:layout_alignTop="@+id/bestScoreLabel"
+        android:layout_marginBottom="65dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userWithBestScore"
+        app:layout_constraintVertical_bias="0.6" />
+
+</android.support.constraint.ConstraintLayout>
