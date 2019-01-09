@@ -5,4 +5,5 @@ An Android app consisting of three games
 - Treasure Hunt: Your objective is to navigate the maze and reach the treasure
 
 It also has scoring features for per game and per user scores and a user interface
-that allows users to create new accounts with their own unique username.
+that allows users to create new accounts or log into an existing account with their own unique 
+username.
